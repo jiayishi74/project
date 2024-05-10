@@ -17,10 +17,10 @@ import sasxport5 "https://wwwn.cdc.gov/Nchs/Nhanes/1999-2000/DEMO.XPT", clear
 ## Mortality Follow-up Data:
 ```
  //data
- global mort_1999_2000 <https://ftp.cdc.gov/pub/HEALTH_STATISTICS/NCHS/datalinkage/linked_mortality/NHANES_1999_2000_MORT_2019_PUBLIC.dat>
+ global mort_1999_2000 https://ftp.cdc.gov/pub/HEALTH_STATISTICS/NCHS/datalinkage/linked_mortality/NHANES_1999_2000_MORT_2019_PUBLIC.dat
 
  //code
-cat <https://ftp.cdc.gov/pub/HEALTH_STATISTICS/NCHS/datalinkage/linked_mortality/Stata_ReadInProgramAllSurveys.do>
+cat https://ftp.cdc.gov/pub/HEALTH_STATISTICS/NCHS/datalinkage/linked_mortality/Stata_ReadInProgramAllSurveys.do
 ```
 
 # Edit the original code
@@ -29,10 +29,10 @@ Download, modify, and upload the provided Stata .do file for linking the DEMO.XP
 # Data Merging
 Execute the following Stata code to merge the survey data with the mortality data, ensuring alignment on the unique sequence numbers:
 ```stata
-global repo <"https://github.com/jiayishi74/project/main/">
+global repo "https://github.com/jiayishi74/project/main/"
 do ${repo}followup.do
 save followup, replace 
-import sasxport5 <"https://wwwn.cdc.gov/Nchs/Nhanes/1999-2000/DEMO.XPT">, clear
+import sasxport5 "https://wwwn.cdc.gov/Nchs/Nhanes/1999-2000/DEMO.XPT", clear
 merge 1:1 seqn using followup
 lookfor follow
 ```
@@ -43,7 +43,7 @@ sts graph, by(huq010) fail
 stcox i.huq010
 ```
 ```
-import sasxport5 <"https://wwwn.cdc.gov/Nchs/Nhanes/1999-2000/HUQ.XPT">, clear 
+import sasxport5 "https://wwwn.cdc.gov/Nchs/Nhanes/1999-2000/HUQ.XPT", clear 
 huq010 
 desc huq010
 codebook huq010
