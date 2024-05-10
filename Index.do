@@ -1,9 +1,4 @@
-# project
-Hw6-Sijin Du
-Project
-# project
-Hw6-Sijin Du
-Project
+
 
 1. Download and edit the Stata_ReadInProgramALlSurveys.do provided by NHANES. Upload the edited do file to the github. This do file imports and prepare the mortality data which further analysis would be based on.
 https://ftp.cdc.gov/pub/HEALTH_STATISTICS/NCHS/datalinkage/linked_mortality/Stata_ReadInProgramAllSurveys.do   
