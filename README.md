@@ -24,7 +24,7 @@ Download, modify, and upload the provided Stata .do file for linking the DEMO.XP
 
 # 5. Week7 survival analysis
 
-Click [here] () to view nonparametric and semiparametric risk estimates from Stata
+Click [here](https://jiayishi74.github.io/hw7/) to view nonparametric and semiparametric risk estimates from Stata
 
 ```stata
 cls 
